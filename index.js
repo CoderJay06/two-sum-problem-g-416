@@ -141,8 +141,15 @@
   
   /*
     hash = {}
+    pairs = []
     // first place all numbers in hash 
-    for element in array
+    for element in array 
+      potentialMatch = target - element
+      
+      if hash[potentialSum]
+        pairs.push([element, potentialMatch])
+      else 
+        hash[potentialSum] = 
   */
   
   function hashTwoSum(array, targetSum) {
