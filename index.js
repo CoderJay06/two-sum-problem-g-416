@@ -164,7 +164,7 @@
       if (hash[potentialMatch]) {
         pairs.push([element, potentialMatch]);
       } 
-      hash[potentialMatch] = element;
+      hash[element] = i;
     }
     return pairs;
   }
