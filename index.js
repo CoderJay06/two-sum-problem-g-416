@@ -97,7 +97,7 @@
       let potentialMatch = targetSum - array[idx];
       if (binaryMatch(array, potentialMatch)) {
         // if found, add to pairs 
-        console.log(potentialMatch)
+        pairs.push()
       }
     }
     return pairs;
