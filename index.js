@@ -88,8 +88,9 @@
     // let a = [5, -2, 4, 9, 1] sorted: [-2, 1, 4, 5, 9]
     // 6 - array[i] 
     
-    
+    let prevNums = [];
     let pairs = [];
+    
     for (let idx = 0; idx < array.length; idx++) {
       
       // calculate: targetSum - array[idx] to check if value in array
