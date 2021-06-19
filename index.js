@@ -146,10 +146,12 @@
     for element in array 
       potentialMatch = target - element
       
-      if hash[potentialSum]
+      if hash[element]
         pairs.push([element, potentialMatch])
       else 
-        hash[potentialSum] = 
+        hash[element] = potentialMatch
+        
+      return pairs
   */
   
   function hashTwoSum(array, targetSum) {
