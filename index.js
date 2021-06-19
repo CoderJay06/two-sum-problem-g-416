@@ -160,10 +160,11 @@
     
     for (const element of array) {
       let potentialMatch = targetSum - element;
-      hash[potentialMatch] = element;
+    
       if (hash[potentialMatch]) {
         pairs.push([element, potentialMatch]);
       } 
+      hash[potentialMatch] = element;
     }
     return pairs;
   }
