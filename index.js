@@ -95,7 +95,7 @@
       
       // calculate: targetSum - array[idx] to check if value in array
       let potentialMatch = targetSum - array[idx];
-      if (binaryMatch(array, potentialMatch)) {
+      if (binaryMatch(array, potentialMatch) && !prevNums.includes()) {
         // if found, add to pairs 
         pairs.push()
       }
