@@ -163,9 +163,8 @@
       
       if (hash[potentialMatch]) {
         pairs.push([element, potentialMatch]);
-      } else {
-        hash[potentialMatch] = array.indexOf(element);
-      }
+      } 
+      hash[potentialMatch] = element;
     }
     return pairs;
   }
