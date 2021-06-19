@@ -155,7 +155,19 @@
   */
   
   function hashTwoSum(array, targetSum) {
+    const hash = {};
+    const pairs = [];
     
+    for (const element of array) {
+      let potentialMatch = targetSum - element;
+      
+      if (hash[potentialMatch]) {
+        pairs.push([element, potentialMatch]);
+      } else {
+        hash[potentialMatch] = element;
+      }
+    }
+    return true;
   }
   
   
