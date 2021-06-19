@@ -137,7 +137,17 @@
   
   // 1. Can we do better?
   
+  // Hash solution
   
+  /*
+    hash = {}
+    // first place all numbers in hash 
+    for element in array
+  */
+  
+  function hashTwoSum(array, targetSum) {
+    
+  }
   
   
   
