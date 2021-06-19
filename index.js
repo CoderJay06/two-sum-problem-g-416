@@ -164,7 +164,7 @@
       if (hash[potentialMatch]) {
         pairs.push([element, potentialMatch]);
       } else {
-        hash[potentialMatch] = element;
+        hash[potentialMatch] = array.indexOf(element);
       }
     }
     return pairs;
