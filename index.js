@@ -81,6 +81,56 @@
   //  . use binary serach to see if matching element exists in array 
   //  . use merge sort O(n log n)
   
+  function binarySearchTwoSum(array, targetSum) {
+    // first sort the input array in asc order
+    [].concat(array.sort((n1, n2) => n1 - n2) );
+    // ex: let sum = 6
+    // let a = [5, -2, 4, 9, 1] sorted: [-2, 1, 4, 5, 9]
+    // 6 - array[i] 
+    
+    
+    let pairs = [];
+    for (let idx = 0; idx < array.length; idx++) {
+      
+      // calculate: targetSum - array[idx] to check if value in array
+      let potentialMatch = targetSum - array[idx];
+      if (binaryMatch(array, potentialMatch)) {
+        // if found, add to pairs 
+        console.log(potentialMatch)
+      }
+    }
+    return pairs;
+  }
+  
+  function binaryMatch(array, target) {
+    // bs algorithm:
+      // set a pointer to min value and max value 
+      // set a piointer to mid value 
+      // loop while min <= max 
+      // if array[mid] = target stop 
+      // if array[mid] < target
+      // min = mid + 1 
+      // if array[mid] > target 
+      // max = mid - 1 
+      
+    let min = 0;
+    let max = array.length - 1;
+      
+    while (min <= max) {
+      let mid = Math.floor( (max + min) / 2);
+      if (array[mid] === target) {
+        return true;
+      } else if (array[mid] < target) {
+        min = mid + 1;
+      } else {
+        max = mid - 1;
+      }
+    }
+    // not found
+    return false;
+
+  }
+  
   // 1. Can we do better?
   
   
