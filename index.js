@@ -167,7 +167,7 @@
         hash[potentialMatch] = element;
       }
     }
-    return true;
+    return pairs;
   }
   
   
