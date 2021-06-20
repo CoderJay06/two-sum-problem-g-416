@@ -161,7 +161,7 @@
     for (const element of array) {
       let potentialMatch = targetSum - element;
     
-      if (hash[element] === potentialMatch) {
+      if (potentialMatch in hash) {
         pairs.push([potentialMatch, element]);
       } 
       hash[element] = array.indexOf(element);
