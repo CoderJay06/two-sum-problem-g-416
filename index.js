@@ -162,7 +162,7 @@
       let potentialMatch = targetSum - element;
     
       if (hash[potentialMatch]) {
-        pairs.push([element, potentialMatch]);
+        pairs.push([potentialMatch, element]);
       } 
       hash[element] = array.indexOf(element);
     }
