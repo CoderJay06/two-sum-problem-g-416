@@ -161,10 +161,10 @@
     for (const element of array) {
       let potentialMatch = targetSum - element;
     
-      if (hash[potentialMatch]) {
+      if (hash[element] === ) {
         pairs.push([element, potentialMatch]);
       } 
-      hash[element] = i;
+      hash[element] = array.indexOf(element);
     }
     return pairs;
   }
